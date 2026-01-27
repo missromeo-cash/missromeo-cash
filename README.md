@@ -1,7 +1,16 @@
 ## Hi there 👋
-
-<!--
+<title>Miss Romeo Cash — 24/7 Passive Income Dashboard</title>
+<!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5421605159709989" crossorigin="anonymous"></script>
 **missromeo-cash/missromeo-cash** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5421605159709989"
+     data-ad-slot="AUTO"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Here are some ideas to get you started:
 
