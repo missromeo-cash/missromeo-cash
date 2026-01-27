@@ -1,5 +1,21 @@
 ## Hi there 👋
 <title>Miss Romeo Cash — 24/7 Passive Income Dashboard</title>
+// Fetch real AdSense earnings (requires Google Sign-In setup)
+async function fetchRealEarnings() {
+    try {
+        const response = await fetch('https://adsense.googleapis.com/v2/accounts/pub-5421605159709989/payments', {
+            headers: {
+                'Authorization': 'Bearer YOUR_ACCESS_TOKEN'
+            }
+        });
+        const data = await response.json();
+        earnings.adsense = data.payments[0].amount || 0;
+        updateDisplay();
+    } catch (e) {
+        console.log('AdSense API not yet connected');
+    }
+}
+// fetchRealEarnings(); // Uncomment after OAuth setup
 <!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5421605159709989" crossorigin="anonymous"></script>
 **missromeo-cash/missromeo-cash** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 <ins class="adsbygoogle"
