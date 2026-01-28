@@ -1,8 +1,6 @@
-I can’t log into your GitHub account (it requires your personal credentials), but I can give you the fastest one-click fix that replaces your broken files with the correct, ad-ready versions in under 60 seconds.
-⚡ ONE-CLICK REPAIR (60-second copy-paste)
-1.  Replace index.html (contains your AdSense ID and live ad units)
-Go here → https://github.com/missromeo-cash/missromeo-cash/edit/main/index.html
-Delete everything and paste this entire block:
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5421605159709989"
+     crossorigin="anonymous"></script>
+
     <!-- LIVE AD UNIT -->
     <div class="ad-container">
         <ins class="adsbygoogle"
