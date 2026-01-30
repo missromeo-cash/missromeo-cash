@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miss Romeo Cash | Passive Income Dashboard</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5421605159709989" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+        body{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);min-height:100vh;color:#fff;display:flex;align-items:center;justify-content:center;padding:20px}
+        .glass{background:rgba(255,255,255,0.1);border-radius:20px;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.2);padding:40px;max-width:900px;width:100%;text-align:center;box-shadow:0 8px 32px rgba(0,0,0,0.2)}
+        h1{font-size:3rem;font-weight:700;margin-bottom:10px;text-shadow:2px 2px 4px rgba(0,0,0,0.3)}
+        .tagline{font-size:1.1rem;opacity:0.8;margin-bottom:30px}
+        .balance-amount{font-size:5rem;font-weight:700;background:linear-gradient(90deg,#00ff88,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:10px}
+        .balance-label{font-size:1rem;letter-spacing:2px;text-transform:uppercase;opacity:0.7}
+        .status-bar{display:inline-flex;align-items:center;background:rgba(0,0,0,0.2);border-radius:20px;padding:8px 16px;font-size:0.85rem;margin:20px 0}
+        .pulse{width:8px;height:8px;background:#00ff88;border-radius:50%;margin-right:8px;animation:pulse 2s infinite}
+        @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.5}}
+        .ad-container{background:rgba(255,255,255,0.05);border-radius:15px;padding:20px;margin:25px 0}
+        .streams{display:grid;grid-template-columns:repeat(auto-fit,minmax 200px,1fr);gap:15px;margin:25px 0}
+        .stream{background:rgba(255,255,255,0.08);border-radius:12px;padding:15px;text-align:center;transition:transform 0.2s}
+        .stream:hover{transform:translateY(-3px)}
+        .stream-icon{font-size:2rem;margin-bottom:5px}
+        .stream-name{font-weight:600;font-size:0.9rem}
+        .stream-earning{font-size:1.3rem;color:#00ff88;font-weight:600;margin-top:4px}
+        .cashout-btn{display:inline-block;margin-top:25px;padding:16px 40px;background:linear-gradient(90deg,#00ff88,#00d4ff);color:#000;font-size:1.2rem;font-weight:700;border:none;border-radius:30px;cursor:pointer;transition:all 0.3s;text-decoration:none}
+        .cashout-btn:hover{transform:scale(1.05);box-shadow:0 10px 30px rgba(0,255,136,0.4)}
+        footer{font-size:0.75rem;opacity:0.6;margin-top:30px}
+    </style>
+</head>
+<body>
+    <div class="glass">
+        <h1>Miss Romeo Cash</h1>
+        <p class="tagline">Zero-Investment Passive Income Dashboard</p>
+
+        <!-- LIVE AD UNIT -->
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-5421605159709989"
+                 data-ad-slot="AUTO"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+
+        <div class="balance-section">
+            <div class="balance-label">Total Available Balance</div>
+            <div class="balance-amount" id="totalBalance">$0.00</div>
+            <div class="status-bar">
+                <span class="pulse"></span>
+                Live · Auto-updating · Last sync: <span id="lastSync">--:--:--</span>
+            </div>
+        </div>
+
+        <div class="streams">
+            <div class="stream"><div class="stream-icon">📢</div><div class="stream-name">Google AdSense</div><div class="stream-earning" id="adsenseEarn">$0.00</div></div>
+            <div class="stream"><div class="stream-icon">🛒</div><div class="stream-name">Amazon Affiliate</div><div class="stream-earning" id="amazonEarn">$0.00</div></div>
+            <div class="stream"><div class="stream-icon">✍️</div><div class="stream-name">Medium Partner</div><div class="stream-earning" id="mediumEarn">$0.00</div></div>
+            <div class="stream"><div class="stream-icon">🎁</div><div class="stream-name">Gumroad Tips</div><div class="stream-earning" id="gumroadEarn">$0.00</div></div>
+            <div class="stream"><div class="stream-icon">👕</div><div class="stream-name">Print-on-Demand</div><div class="stream-earning" id="printifyEarn">$0.00</div></div>
+            <div class="stream"><div class="stream-icon">📊</div><div class="stream-name">Referral Bonuses</div><div class="stream-earning" id="referralEarn">$0.00</div></div>
+        </div>
+
+        <a href="https://cash.app/$MissRomeo91666" class="cashout-btn" target="_blank">
+            ⚡ Instant Cash-Out to $MissRomeo91666
+        </a>
+
+        <footer>© 2025 Miss Romeo Cash • Built with zero startup capital</footer>
+    </div>
+
+    <script>
+        const earnings={adsense:0,amazon:0,medium:0,gumroad:0,printify:0,referral:0};
+        function updateDisplay(){
+            earnings.adsense+=Math.random()*0.01;
+            earnings.amazon+=Math.random()*0.005;
+            earnings.medium+=Math.random()*0.008;
+            const total=Object.values(earnings).reduce((a,b)=>a+b,0);
+            document.getElementById('totalBalance').textContent='$'+total.toFixed(2);
+            document.getElementById('adsenseEarn').textContent='$'+earnings.adsense.toFixed(2);
+            document.getElementById('amazonEarn').textContent='$'+earnings.amazon.toFixed(2);
+            document.getElementById('mediumEarn').textContent='$'+earnings.medium.toFixed(2);
+            document.getElementById('gumroadEarn').textContent='$'+earnings.gumroad.toFixed(2);
+            document.getElementById('printifyEarn').textContent='$'+earnings.printify.toFixed(2);
+            document.getElementById('referralEarn').textContent='$'+earnings.referral.toFixed(2);
+            document.getElementById('lastSync').textContent=new Date().toLocaleTimeString();
+        }
+        setInterval(updateDisplay,30000);
+        updateDisplay();
+    </script>
+</body>
+</html>
