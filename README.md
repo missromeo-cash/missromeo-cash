@@ -1,6 +1,5 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5421605159709989"
      crossorigin="anonymous"></script>
-
     <!-- LIVE AD UNIT -->
     <div class="ad-container">
         <ins class="adsbygoogle"
